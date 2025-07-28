@@ -10,33 +10,65 @@
   --primary-light-300: #fff5e7;
   --primary-light-400: #dad8d4;
 }
+@font-face {
+  font-family: "vazir";
+  src: url(/public/vazir-font-v16.1.0/Vazir.woff) format(woff);
+}
+@font-face {
+  font-family: "vazir-bold";
+  src: url(/public/vazir-font-v16.1.0/Vazir-Bold.woff) format(woff);
+}
+@font-face {
+  font-family: "vazir-light";
+  src: url(/public/vazir-font-v16.1.0/Vazir-Light.woff) format(woff);
+}
+@font-face {
+  font-family: "vazir-thin";
+  src: url(/public/vazir-font-v16.1.0/Vazir-Thin.woff) format(woff);
+}
+@font-face {
+  font-family: "vazir-medium";
+  src: url(/public/vazir-font-v16.1.0/Vazir-Medium.woff) format(woff);
+}
+
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  font-family: "poppins", sans-serif;
+  font-family: "vazir";
   color: var(--primary-dark-300);
   background-color: var(--primary-light-300);
-  margin: 0;
 }
-/* html {
-  font-size: 10px;
-} */
 
 /* ***************************************** */
 /* ************* Header ************* */
 /* ***************************************** */
+
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--primary-light-300);
+  z-index: 1000;
+  direction: rtl;
+}
+.header_item {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0em 1em;
+  margin: 0 auto;
+  width: 1800px;
 }
+
 .container {
   max-width: 1800px;
   margin: 0 auto;
   padding: 0 2rem;
+  margin-top: 8rem;
+  direction: rtl;
 }
 .logo_header {
   width: 70px;
@@ -60,6 +92,10 @@ header {
   color: inherit;
   font-weight: 500;
 }
+.main_nav {
+  display: inline-block;
+  margin-right: 2rem;
+}
 
 .main_nav__item:hover {
   color: var(--primary-light-100);
@@ -73,9 +109,14 @@ header {
 .navigation {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+.navigation-img {
+  width: 5rem;
 }
 .input_search {
-  width: 55em;
+  font-family: inherit;
+  width: 30rem;
   border: none;
 
   border-radius: 2rem;
@@ -130,36 +171,49 @@ p {
 }
 
 h1.sub_header__text {
+  font-family: "vazir";
   color: var(--primary-light-100);
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 400;
   margin: 0;
+  padding-bottom: 0;
 }
 h2.sub_header__text {
-  font-size: xxx-large;
+  font-family: "vazir-medium";
+  font-size: 1rem;
   line-height: 55px;
   letter-spacing: -0.5px;
   font-weight: 600;
+  padding: 0;
   margin: 0;
 }
 
 .sub_header__body {
-  margin-top: 2em;
-  font-size: 15px;
+  font-family: "vazir-medium";
+  margin-top: 1rem;
+  font-size: 1rem;
 }
 .btn {
-  border: none;
+  font-family: "iran-sans";
+
   transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn__sign_in {
-  font-family: inherit;
+  font-family: "vazir";
+  padding-left: 0.5rem;
 }
 .btn__log_in {
+  font-family: "vazir";
   background-color: var(--primary-light-100);
   color: var(--primary-light-300);
-  padding: 5px 20px;
+  padding: 10px 20px;
+
   border-radius: 10px;
+  text-align: center;
 }
 .btn__log_in:hover {
   background-color: var(--primary-light-200);
@@ -229,6 +283,7 @@ h2.sub_header__text {
 /* ************* second-section ************* */
 /* ***************************************** */
 .secondary_section {
+  font-family: inherit;
   display: flex;
   gap: 2em;
   margin-top: 8em;
@@ -286,26 +341,43 @@ h2.sub_header__text {
 /* ****************** Footer **************** */
 /* ***************************************** */
 footer {
+  position: relative;
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
   gap: 1em;
   background-color: var(--primary-light-100);
   background-image: linear-gradient(#ffa94de7, #d17411e1),
-    url("../public/study-img.jpg");
+    url("/public/study_tip.png.webp");
   background-size: cover;
   background-position: center;
   margin-top: 8em;
   padding: 1em 2em;
 }
+/* .footer-img {
+  height: 3rem;
+}
+.footer-img img {
+  object-fit: cover;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+} */
 address {
+  direction: rtl;
+  font-size: 0.8rem;
+  width: 10rem;
   margin-top: 1em;
   margin-left: 0.8em;
 }
 
 .footer_nav {
+  padding-top: 1rem;
+  direction: rtl;
   display: grid;
-  gap: 2em;
+  gap: 0.4rem;
   grid-template-columns: 1fr 1fr 1fr;
 }
 .footer_nav__item:hover {
@@ -316,10 +388,11 @@ address {
   display: flex;
   flex-direction: column;
   align-items: start;
+  gap: 0.2rem;
 }
 .footer_nav__container h1 {
-  font-weight: 500;
   font-size: large;
+  padding-bottom: 0.8rem;
 }
 .footer_nav__item {
   font-size: 0.9em;
@@ -346,16 +419,19 @@ a.footer_nav__item {
 
 .footer_logo__item {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .footer_icon {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 1em;
   grid-row: 2;
   margin-left: 0.8em;
+  direction: rtl;
 }
 .footer_icon__item {
-  width: 1.5em;
+  width: 1.5rem;
 }
 .copyright {
   display: flex;

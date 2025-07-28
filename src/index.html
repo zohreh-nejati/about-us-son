@@ -5,104 +5,58 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>about us</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+
     <link rel="stylesheet" href="./style.css" />
   </head>
 
   <body>
     <header>
-      <div class="navigation">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          version="1.0"
-          width="186.000000pt"
-          viewBox="0 0 186.000000 212.000000"
-          preserveAspectRatio="xMidYMid meet"
-          class="logo_header"
-        >
-          <g
-            transform="translate(0.000000,212.000000) scale(0.100000,-0.100000)"
-            fill="#ff922b"
-            stroke="none"
-          >
-            <path
-              d="M877 1736 c-94 -35 -147 -110 -147 -210 0 -37 7 -70 20 -97 38 -73 143 -128 219 -114 153 29 230 180 161 315 -46 90 -163 139 -253 106z"
-            />
-            <path
-              d="M454 1546 c-30 -21 -120 -155 -154 -228 -133 -288 -31 -654 235 -844 347 -247 807 -141 1020 235 51 91 76 181 82 297 10 180 -41 333 -161 482 l-59 74 -60 -61 -61 -60 46 -49 c88 -94 128 -205 128 -355 0 -153 -46 -265 -154 -373 -77 -77 -132 -109 -231 -134 -138 -35 -281 -20 -398 42 -69 37 -186 157 -222 228 -59 116 -72 272 -34 396 25 83 47 121 110 195 l48 56 -57 56 c-54 53 -59 56 -78 43z"
-            />
-            <path
-              d="M618 1320 c-148 -172 -137 -423 26 -585 52 -53 142 -102 202 -112 l34 -6 0 265 0 264 -101 107 c-55 59 -107 107 -114 107 -7 0 -29 -18 -47 -40z"
-            />
-            <path
-              d="M1112 1257 l-102 -102 0 -269 0 -268 32 6 c60 12 138 55 192 106 133 126 173 324 98 484 -27 57 -94 146 -111 146 -3 0 -52 -46 -109 -103z"
-            />
-          </g>
-        </svg>
+      <div class="header_item">
+        <div class="navigation">
+          <img class="navigation-img" src="/public/logo-removebg.svg" />
+          <h1>دریبل</h1>
 
-        <h1>Dribble</h1>
-        <nav class="main-nav">
-          <a href="#" class="main_nav__item"> Home </a>
-          <a href="#" class="main_nav__item"> Services </a>
-          <a href="#" class="main_nav__item"> About </a>
-        </nav>
-        <div class="search_container">
-          <input
-            class="input_search"
-            name="search"
-            type="search"
-            placeholder="Search..."
-          />
-
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="icon_search"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+          <nav class="main_nav">
+            <a href="#" class="main_nav__item"> خانه </a>
+            <a href="#" class="main_nav__item"> خدمات </a>
+            <a href="#" class="main_nav__item"> درباره ما </a>
+          </nav>
+          <div class="search_container">
+            <input
+              class="input_search"
+              name="search"
+              type="search"
+              placeholder="جست‌جو ..."
             />
-          </svg>
+          </div>
+        </div>
+        <div class="btn">
+          <a class="btn__sign_in">ورود</a>
+          <a class="btn__log_in"> ثبت‌نام</a>
         </div>
       </div>
-
-      <div>
-        <button class="btn btn__sign_in">Sign in</button>
-        <button class="btn btn__log_in">Log in</button>
-      </div>
     </header>
+
     <div class="container">
       <section class="intro_section">
         <div>
-          <h1 class="sub_header__text">How it started</h1>
-          <h2 class="sub_header__text">
-            Our dream is global learning transformation
-          </h2>
+          <h1 class="sub_header__text">چگونه آغاز شد</h1>
+          <h2 class="sub_header__text">رویای ما تحول جهانی در یادگیری است</h2>
+          <p class="sub_header__body">
+            سفر ما با یک ایده ساده آغاز شد: دسترسی‌پذیر و معنادارتر کردن
+            Dribble. در سال ۱۹۸۹، گروهی از افراد پرشور با چشم‌اندازی مشترک گرد
+            هم آمدند — حل یک مشکل خاص که مردم هر روز با آن روبه‌رو بودند. ما از
+            کوچک‌ترین‌ها شروع کردیم، شب‌های طولانی را در آشپزخانه‌ها، گاراژها و
+            کافه‌های محلی کار کردیم.
+          </p>
         </div>
         <img
           src="../public/about us-01.jfif"
           alt="a group of people working together"
           class="img img__introduction"
         />
-        <p class="sub_header__body">
-          Our journey began with a simple idea: make Dribble more accessible and
-          meaningful.<wbr /> Back in 1989, a group of passionate individuals
-          came together with a shared vision — to solve a specific problem that
-          people faced every day. We started small,<wbr />
-          working late nights from kitchens, garages, and local coffee shops.
-        </p>
 
-        <div class="Statistics">
+        <!-- <div class="Statistics">
           <div>
             <h2>3.5</h2>
             <p>Years Experience</p>
@@ -122,62 +76,66 @@
             <h2>100k</h2>
             <p>Trusted Student</p>
           </div>
-        </div>
+        </div> -->
       </section>
       <main class="main_section">
-        <h1 class="sub_header__text">Meat the team</h1>
+        <h1 class="sub_header__text">آشنایی با تیم</h1>
         <h2 class="sub_header__text">
-          Meat our dedicated team <br />of educators and innovators
+          با تیم متعهد ما از آموزگاران و نوآوران آشنا شوید
         </h2>
         <div class="img_team">
           <div class="team_member">
             <img
+              loading="eager"
               class="img img_team__item"
               src="../public/profile-1.jpg"
               alt="about us
       profile pic"
             />
             <div class="team_name">
-              <h1 class="team_name__header">Sloane Folkin</h1>
+              <h1 class="team_name__header">فاطمه رضایی</h1>
               <h2 class="team_name__subheader">Founder</h2>
             </div>
           </div>
 
           <div class="team_member">
             <img
+              loading="eager"
               class="img img_team__item"
               src="../public/profile-2.jpg"
               alt="about us
       profile pic"
             />
             <div class="team_name">
-              <h1 class="team_name__header">Joe Quinn</h1>
+              <h1 class="team_name__header">آرتا راد</h1>
               <h2 class="team_name__subheader">CEO</h2>
             </div>
           </div>
 
           <div class="team_member">
             <img
+              loading="eager"
               class="img img_team__item"
               src="../public/profile-3.jpg"
               alt="about us
       profile pic"
             />
             <div class="team_name">
-              <h1 class="team_name__header">Adley Raegan</h1>
+              <h1 class="team_name__header">زهرا مولایی</h1>
               <h2 class="team_name__subheader">CTO</h2>
             </div>
           </div>
 
           <div class="team_member">
             <img
+              loading="eager"
               class="img img_team__item"
               src="../public/profile-4.jpg"
               alt="about us
       profile pic"
             />
             <div class="team_name">
-              <h1 class="team_name__header">Medina Murphy</h1>
+              <h1 class="team_name__header">شهلا فدایی</h1>
               <h2 class="team_name__subheader">Teacher</h2>
             </div>
           </div>
@@ -185,31 +143,31 @@
 
         <div class="secondary_section">
           <div class="vision_section">
-            <h1 class="sub_header__text">Our vision</h1>
-            <h2 class="sub_header__text">Empowering Lives Though Education</h2>
+            <h1 class="sub_header__text">چشم‌انداز ما</h1>
+            <h2 class="sub_header__text">توانمندسازی زندگی‌ها از طریق آموزش</h2>
             <p>
-              Education is more than just a pathway to employment—it's a
-              powerful tool for personal growth, social mobility, and long-term
-              change. By providing access to quality learning opportunities, we
-              enable individuals to unlock their potential, build confidence,
-              and shape a better future for themselves and their communities.
+              آموزش تنها مسیری برای اشتغال نیست — بلکه ابزاری قدرتمند برای رشد
+              فردی، ارتقای اجتماعی و ایجاد تغییرات پایدار است. با فراهم‌کردن
+              دسترسی به فرصت‌های یادگیری با کیفیت، به افراد کمک می‌کنیم تا
+              استعدادهای خود را شکوفا کنند، اعتماد‌به‌نفس بسازند و آینده‌ای بهتر
+              برای خود و جامعه‌شان رقم بزنند.
             </p>
           </div>
           <div class="mission_section">
-            <h1 class="sub_header__text">Our mission</h1>
-            <h2 class="sub_header__text">Learning For All Everywhere</h2>
+            <h1 class="sub_header__text">ماموریت ما</h1>
+            <h2 class="sub_header__text">یادگیری برای همه، در همه‌جا</h2>
             <p>
-              Education should know no boundaries. Whether in classrooms, homes,
-              or remote villages, everyone deserves the chance to learn, grow,
-              and succeed. “Learning for All, Everywhere” is our commitment to
-              making education accessible, inclusive, and adaptable—regardless
-              of location, age, or background.
+              آموزش نباید مرز بشناسد. چه در کلاس‌های درس، چه در خانه‌ها و چه در
+              دورافتاده‌ترین روستاها، همه شایسته‌ی آن‌اند که بیاموزند، رشد کنند
+              و موفق شوند. شعار ما «یادگیری برای همه، در همه‌جا» تعهدی است برای
+              دسترسی‌پذیر، فراگیر و قابل‌انطباق‌کردن آموزش — فارغ از موقعیت
+              مکانی، سن یا پیش‌زمینه‌ی فردی.
             </p>
           </div>
         </div>
 
         <div class="collaborators">
-          <h1 class="sub_header__text">Our partners</h1>
+          <h1 class="sub_header__text">همکاران ما</h1>
           <div class="collaborators_container">
             <img
               class="img_logo__item"
@@ -339,40 +297,39 @@
         </div>
 
         <address>
-          No. 9, Nasim Shomal (1st) Alley, Corner of Sarafraz St.,<br />
-          Shahid Beheshti St.<br />
-          Tehran, Iran
+          تهران ، خیابان شهید بهشتی ، خیابان سر افراز، نبش کوی نسیم شمال(یکم) ،
+          پلاک ۹
         </address>
       </div>
 
       <nav class="footer_nav">
         <div class="footer_nav__container">
-          <h1>Links</h1>
-          <a href="#" class="footer_nav__item">Home</a>
-          <a href="#" class="footer_nav__item">Learning path</a>
+          <h1>لینک</h1>
+          <a href="#" class="footer_nav__item">صفحه‌اصلی</a>
+          <a href="#" class="footer_nav__item"> مسیر یادگیری</a>
         </div>
         <div class="footer_nav__container">
-          <h1>Community</h1>
-          <a href="#" class="footer_nav__item">blog</a>
-          <a href="#" class="footer_nav__item">careers</a>
-          <a href="#" class="footer_nav__item">Investor</a>
+          <h1>جامعه</h1>
+          <a href="#" class="footer_nav__item">بلاگ</a>
+          <a href="#" class="footer_nav__item">شغل‌ها</a>
+          <a href="#" class="footer_nav__item">سرمایه‌گذاران</a>
         </div>
 
         <div class="footer_nav__container">
-          <h1>Others</h1>
-          <a href="#" class="footer_nav__item">challenge</a>
-          <a href="#" class="footer_nav__item">Privacy Policy</a>
-          <a href="#" class="footer_nav__item">Help & support</a>
+          <h1>موارد دیگر</h1>
+          <a href="#" class="footer_nav__item">چالش‌ها</a>
+          <a href="#" class="footer_nav__item">قوانین</a>
+          <a href="#" class="footer_nav__item">راهنمایی </a>
         </div>
       </nav>
 
       <div class="copyright">
-        <p>&copy; 2025 Dribble. All rights reserved.</p>
+        <p>&copy; تمامی حقوق این وب‌سایت محفوظ است</p>
         <div class="footer_copyright">
-          <p class="footer_copyright__item">Terms of us</p>
-          <p class="footer_copyright__item">Cookies settings</p>
+          <p class="footer_copyright__item">شرایط استفاده</p>
         </div>
       </div>
+      <!-- <div class="footer-img"><img src="../public/study-img.jpg" alt="" /></div> -->
     </footer>
   </body>
 </html>
